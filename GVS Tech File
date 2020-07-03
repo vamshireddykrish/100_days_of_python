@@ -1,0 +1,63 @@
+class Demo:
+    a=30
+    b=20
+    s='i a from class'
+    def dell(self):
+        print('i am dell')
+        print(d.a)
+        self.harry(2,3,4)
+        self.harry()
+        print(d.b)
+        self.hp()
+        return 20
+    def hp(self):
+        print('i am hp')
+        print(d.a)
+        self.apple()
+        print(d.s)
+    def gvs(self):
+        self.hp()
+        print('i am gvs')
+        return d.s
+    def harry(self,x,m,o):
+        print('i am harry')
+        print(x+m)
+        print(o)
+        self.manikanta()
+        print('i am harry2')
+        return self.b*self.a
+    def apple(self):
+        print('i am apple')
+        print(d.s)
+        print('i am apple 2')
+    def vamshi(self,x):
+        self.apple()
+        print('i am vamshi')
+        print(x)
+        self.gvs()
+        print(d.s)
+        print('i am vamshi2')
+        return 2
+    def manikanta(self):
+        self.apple()
+        print('i am manikanta')
+        print(d.s)
+        self.madav(4,6)
+        print(d.a)
+        print(self.a/self.b)
+        print(' i am maikanta2')
+    def madav(self,x,y):
+        self.vamshi(6)
+        print(d.s)
+        self.rithvik()
+        print(3*4)
+        print('i am madav2')
+    def rithvik(self):
+        print('i am rithvik')
+        print(self.b*self.a)
+        self.vamshi(6)
+        print('i am rithvik2')
+        return self.s
+d=Demo()
+d.dell()
+
