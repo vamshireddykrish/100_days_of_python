@@ -1,0 +1,89 @@
+Tkinter
+BUTTONS
+
+
+
+import tkinter
+from tkinter import *
+
+
+def prin():
+    print("Hi")
+
+
+window = Tk()
+window.geometry("600x600")
+BUTT = Button(window,
+              text="Buton",
+              command=prin,
+              activeforeground="purple",
+              padx=20,
+              pady="10")
+BUTT.place(x=200, y=500)
+btn2 = Button(window, 
+              text="ENTER", 
+              padx=10, 
+              font="Ariel", 
+              wraplength=2, 
+              bd="10", 
+              pady=10, 
+              activebackground="yellow",
+              bg="pink")
+btn2.grid(row="1", column="2")
+window.mainloop()
+
+
+Tkinter
+Canvas
+
+
+import tkinter
+from tkinter import *
+
+win = Tk()
+c = Canvas(win, width="500", height="500", bg="lightblue")
+
+arc = c.create_arc(10, 50, 240, 210, start=0, extent="180", fill="yellow")
+line = c.create_line(10, 10, 200, 200)
+filename = PhotoImage(file="tkinter.jpg")
+pic = c.create_image(50, 50, anchor=NE, image=filename)
+
+c.pack()
+
+win.mainloop()
+
+
+Tkinter
+Radio Btn & Check Btn
+
+
+import tkinter
+from tkinter import *
+
+win = Tk()
+win.geometry("300x400")
+c1 = IntVar()
+cb1 = Checkbutton(win, 
+                  text="BUTTON1", 
+                  height=52, 
+                  width=300,
+                  onvalue=1,
+                  offvalue=0, 
+                  variable=c1)
+cb1.pack()
+
+var1 = IntVar()
+var2 = IntVar()
+rb1 = Radiobutton(win, 
+                  text="RB1", 
+                  variable=var1, 
+                  value=1)
+rb1.pack()
+rb2 = Radiobutton(win, 
+                  text="RB1", 
+                  variable=var2, 
+                  value=1)
+rb2.pack()
+
+win.mainloop()
+
